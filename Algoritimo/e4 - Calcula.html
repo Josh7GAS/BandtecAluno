@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Somando dados</title>
+</head>
+
+<body>
+    <label>
+        1°N:
+        <input type="number" id="n1" value=" "><br><br>
+        </label>
+        
+        <label>
+            2°N:
+            <input type="number" id="n2" value=" "><br><br>
+            </label>
+
+        <label>
+            3°N:
+            <input type="number" id="n3" value=" "><br><br>
+            </label>
+            
+        <button onclick="calcula()">Clique aqui para calcular os números digitados</button>
+
+        <p id="resultado"></p>
+
+        <script>
+        function calcula(){
+           var chama_id_interno = document.getElementById("n1").value 
+           + "+" + document.getElementById("n2").value
+            + "+" + document.getElementById("n3").value;
+
+           var soma = parseInt(document.getElementById("n1").value)
+            +parseInt(document.getElementById("n2").value)
+             +parseInt(document.getElementById("n3").value);
+             
+           document.getElementById("resultado").innerHTML = chama_id_interno + " = " + soma;
+        }
+            </script>
+    
+</body>
+</html>
