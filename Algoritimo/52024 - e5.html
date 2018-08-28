@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maior ou Menor</title>
+</head>
+<body>
+    
+    <label>
+        Nome:
+        <input type="text" id="nome"><br><br>
+    </label>
+
+    <label>
+        Idade:
+        <input type="number" id="idade"><br><br>
+    </label>
+    <button onclick="maior_menor()">verificar idade</button>
+
+    <p id="oi"></p>
+
+    <script>    
+    function maior_menor(){
+    var anv= document.getElementById("idade").value
+    var Maior= anv >=18 ? "Você é maior" : "Você é menor"
+    
+   document.getElementById("oi").innerHTML = "sua idade é de " + anv +"<br>"+ Maior;
+    }
+    </script>
+
+    
+</body>
+</html>
