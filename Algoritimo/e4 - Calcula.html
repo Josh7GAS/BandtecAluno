@@ -30,12 +30,12 @@
         <script>
         function calcula(){
            var chama_id_interno = document.getElementById("n1").value 
-           + "+" + document.getElementById("n2").value
-            + "+" + document.getElementById("n3").value;
+           + " + " + document.getElementById("n2").value
+            + " + " + document.getElementById("n3").value;
 
-           var soma = parseInt(document.getElementById("n1").value)
-            +parseInt(document.getElementById("n2").value)
-             +parseInt(document.getElementById("n3").value);
+           var soma = parseFloat(document.getElementById("n1").value)
+            +parseFloat(document.getElementById("n2").value)
+             +parseFloat(document.getElementById("n3").value);
              
            document.getElementById("resultado").innerHTML = chama_id_interno + " = " + soma;
         }
