@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Calcule a base do Triângulo</H1>
+
+        <button onclick="calcula()">Área</button>
+
+        <label>
+            Base:
+            <input type="number" id="Base" value"Base">  X </label>
+           
+           <label>
+               Altura:
+                <input type= "number" id="Altura"> 
+                <label>/2  =  </label>
+          </label>
+          <spam id="oi"></spam>
+
+        <script>
+            function calcula(){
+                var base= document.getElementById("Base").value;
+                var altura= document.getElementById("Altura").value;
+                var triangulo = (base * altura)/2;
+                 document.getElementById("oi").innerHTML = Math.abs(triangulo);
+            }
+        </script>    
+</body>
+</html>

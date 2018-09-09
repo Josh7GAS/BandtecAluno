@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h3>6,0 matemática</h3>
+    <h3>6,5 Português</h3>
+    <h3>7,0 história</h3>
+    <h3>10,0 de artes</h3>
+    <h3>6,3 Educação Física</h3>
+    <button onclick="minima()" >Calcular </button>
+
+    <p id ="mat">Matematica</p>;
+    <p id ="port">Portugues</p>;
+    <p id="hist"></p>;
+    <p id="art">Arte</p>;
+    <p id= "edfisic">Educação fisica;</p>
+    <script>
+
+    function minima(){
+        var mat= 6.0; port= 6.5; hist= 7.0; art= 10.0; edfisic= 6.3;
+      mat=  (8*2)-mat;
+      port= (8*2)-port;
+      hist= (8*2)-hist;
+      art=(8*2)-art;
+      edfisic=(8*2)-edfisic;
+
+      document.getElementById("mat").innerHTML = mat;
+      document.getElementById("port").innerHTML = port;
+      document.getElementById("hist").innerHTML = hist;
+      document.getElementById("art").innerHTML = art;
+      document.getElementById("edfisic").innerHTML = edfisic;  }
+         </script>
+
+
+    
+</body>
+</html>

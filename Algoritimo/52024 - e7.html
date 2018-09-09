@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bitch Better Have My Money</title>
+    </head>
+<body>
+    
+
+    <h1>You own me Bitch!!!!</h1>
+
+    <Label>Tempo: <input type="number" id="meses">
+    </Label><br><br>
+    <button onclick="montante()">Montante</button>
+    = 1275 X (1+(0.01*Tempo)) =  <spam id="divida"></spam>
+    <script>
+            function montante(){
+                var calcula = 1275*(1+(0.01*document.getElementById("meses").value));
+                document.getElementById("divida").innerHTML= Math.abs(calcula);
+            }
+    </script>
+</body>
+</html>

@@ -10,26 +10,54 @@
     
     <label>
         Nome:
-        <input type="text" id="nome"><br><br>
+        <input type="text" id="nometxt"><br><br>
     </label>
 
     <label>
         Idade:
         <input type="number" id="idade"><br><br>
     </label>
+    
+    
+    <Label for="sexoM">Masculino</Label>
+<input type="radio" id="sexoM" name="sexo" value="sexoM">
+
+<Label for="sexoF">Feminino</Label>
+<input type="radio" id="sexoF" name="sexo" value="sexoF">
+
+
+<br><br>
+
     <button onclick="maior_menor()">verificar idade</button>
 
     <p id="oi"></p>
 
     <script>    
     function maior_menor(){
-    var anv= document.getElementById("idade").value
-    var Maior= anv >=18 ? "Você é maior" : "Você é menor"
-    
-   document.getElementById("oi").innerHTML = "sua idade é de " + anv +"<br>"+ Maior;
+        var anv= document.getElementById("idade").value
+        var Maior= anv >=18 ? "Você é maior" : "Você é menor";
+        var nome= document.getElementById("nometxt").value;
+        document.getElementById("oi").innerHTML = "Olá " + man_or_woman() + " " +  nome + " sua idade é de " + anv +" <br> "+ Maior;
     }
-    </script>
+    
+    function man_or_woman(){
+        if(document.getElementById("sexoM").checked)
+        {
+            return("Sr");
+        }
+        else 
+        if (document.getElementById("sexoF").checked);
+        {
+            return("Sra");
+        }
+    }
 
     
+   
+    
+    </script>
+
+
 </body>
 </html>
+ 
