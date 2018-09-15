@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>peÇa</title>
+</head>
+<body>
+<h1>Caixa Peça</h1>
+
+<Label>Código:</Label>
+<input type="text" name="codigo" id="codigo"><br><br>
+
+<Label>Valor:</Label>
+<input type="text" name="valor" id="vlr"><br><br>
+
+<Label>Qtd de Peça:</Label>
+<input type="text" name="quantidade" id="qtdpeça"><br><br>
+
+<button onclick='Caixa()'>Calcular Conta</button>
+
+<p id="frase"></p>
+
+<script>
+    function Caixa(){
+    var mostra = document.getElementById("codigo").value;
+    var calcula =parseFloat(document.getElementById("vlr").value) * parseInt(document.getElementById("qtdpeça").value);
+
+    document.getElementById("frase").innerHTML = mostra + " =&nbsp;" + calcula;
+
+    }
+</script>
+</body>
+</html>
