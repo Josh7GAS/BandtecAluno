@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Soma</title>
+</head>
+<body>
+    <h1>Digite 3 números</h1>
+
+    <Label>1°:</Label>
+    <input type="number"  id="n1">
+
+    <Label>2°:</Label>
+    <input type="number"  id="n2">
+
+    <Label>3°:</Label>
+    <input type="number"  id="n3">
+
+    <button onclick="faz()">Clique Aqui</button>
+    <p id="mul"></p>
+    
+    <script>
+        function faz(){ 
+        var n1= parseFloat(document.getElementById("n1").value)
+            n2=  parseFloat(document.getElementById("n2").value) 
+            n3=  parseFloat(document.getElementById("n3").value)
+            soma= n1 + n2 + n3
+         document.getElementById("mul").innerHTML =n1+"+"+n2+"+"+n3+"=" + soma;
+        }
+            </script>
+    
+</body>
+</html>    

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Qtd Combustivel</title>
+</head>
+<body>
+    <h1>Combustivel</h1>
+    <Label>Hodômetro Incicial:</Label><br>
+    <input id="hi"type="number"> <br>
+
+    <Label>Hodômetro Final:</Label><br>
+    <input id="hf"type="number"><br>
+
+    <Label>Total de Litros de Combustivel Abastecidos:</Label><br>
+    <input id="tot"type="number"> 
+
+    <button onclick="Calcular()"></button>
+    <h2 id="rest"></h2>
+
+    <script>
+        function Calcular(){
+    var hmf= document.getElementById("hf").value;
+        hmi= document.getElementById("hi").value;
+        total= document.getElementById("tot")
+        Formula= (hmf-hmi)/total;
+        document.getElementById("rest").innerHTML= Formula
+        }
+        </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Concurso de Beleza</h1>
+    <label>Jurado 1:</label><br>
+    <input type="number" id="j1"><br><br>
+
+    <label>Jurado 2:</label><br>
+    <input type="number" id="j2"><br><br>
+
+    <label>Jurado 3:</label><br>
+    <input type="number" id="j3"><br><br>
+    
+    <label>Jurado 4:</label><br>
+    <input type="number" id="j4"><br>
+    
+    <label>Jurado 5:</label><br>
+    <input type="number" id="j5"><br>
+
+    <label>Jurado 6:</label><br>
+    <input type="number" id="j6"><br><br>
+
+    <label>Jurado 7:</label><br>
+    <input type="number" id="j7"><br><br>
+
+    <button onclick="Notas()">Enviar</button>
+
+    <p id="pos"></p>
+    <p id="neg"></p>
+
+    <script>
+        function Notas(){
+        var n1=document.getElementById("j1").value;
+            n2=document.getElementById("j2").value;
+            n3=document.getElementById("j3").value;
+            n4=document.getElementById("j4").value;
+            n5=document.getElementById("j5").value;
+            n6=document.getElementById("j6").value;
+            n7=document.getElementById("j7").value;
+
+            var positivas="";
+            var negativas= "";
+                somaPositiva= 0;
+                somaNegativa= 0;
+// função de validação de input
+
+                if ((positvas>5) && (positivas=0)) {
+
+                    return false;
+                   
+                }else{
+                return true 
+                }
+
+                if ((negativas=0) &&(negativas<-5)) {
+
+                    return false;    
+                }
+                else{
+                    
+                    return true;
+                }
+
+
+            if (n1> 0) {
+               
+                positivas += "Nota N1"+ n1+"\n";
+                somaPositiva += n1;  
+            } 
+            if(n1<0){
+
+                negativas+= "Nota N1"+ n1 + "\n";
+                somaNegativa + n1;
+            }
+
+            if (n2>0){
+
+                positivas += "Nota N2" + n2 + "\n";
+                somaPositiva += n2;
+        
+            }
+            if(n2<0){
+                negativas += "Nota N2" + n2 + "\n";
+                somaNegativa += n2;
+            }
+
+            if(n3>0){
+
+                positivas += "Nota N3" + n3 + "\n";
+                somaPositiva += n3;
+
+            }
+            if(n3<0){
+
+                negativas += "Nota N3" + n3 + "\n";
+                somaNegativa += n3;
+
+            }
+            if(n4>0){
+
+                positivas += "Nota N4" + n4 + "\n";
+                somaPositiva += n4;
+        
+            }
+            if(n5>0)
+
+                positivas += "Nota N5" + n5 + "\n";
+                somaPositiva += n5; 
+
+            }
+            if(n5<0){
+                negativas += "Nota N5" + n5 + "\n";
+                somaNegativa += n5  
+            }
+            if(n6>0){
+
+                positivas += "Nota N6" + n6 + "\n";
+                somaPositiva += n6;
+            }
+            if(n6<0){
+                negativas += "Nota N6" + n6 + "\n";
+                somaNegativa += n6;
+            }
+            if(n7>0)
+                positivas += "Nota N7" + n7 +"\n";
+                somaPositiva += n7;
+            
+            if(n7<0){
+                negativas += "Nota N7"+ n7 +"\n";
+            }
+
+            
+            
+    
+    
+    </script>
+    
+</body>
+</html>0

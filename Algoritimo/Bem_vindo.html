@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bem Vindo</title>
+</head>
+<body>
+    <h1>Olá!</h1>
+
+    <label>Qual é o seu nome:</label>
+    <input type="text" id="nome"><br><br>
+
+    <label>Qual é seu sobrenome?</label>
+    <input type="text" id="sobrenome"><br><br>
+
+    <label for="dt">Qual a data do seu nescimento?</label>
+    <input type="date" id="data"><br><br>
+
+    <button onclick="here()">Clique</button>
+    <p id="ola"></p>
+
+    <script>
+        function here(){
+            var nome= document.getElementById("nome").value;
+                sobrenome= document.getElementById("sobrenome").value;
+                data= document.getElementById("data").value;
+                mostra= document.getElementById("ola").innerHTML= nome+ " "+ sobrenome+ " "+ data;
+        }
+    </script>
+
+    
+
+
+</body>
+</html>
