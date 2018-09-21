@@ -35,37 +35,45 @@
     <p id="neg"></p>
 
     <script>
-        function Notas(){
-        var n1=document.getElementById("j1").value;
-            n2=document.getElementById("j2").value;
-            n3=document.getElementById("j3").value;
-            n4=document.getElementById("j4").value;
-            n5=document.getElementById("j5").value;
-            n6=document.getElementById("j6").value;
-            n7=document.getElementById("j7").value;
 
-            var positivas="";
-            var negativas= "";
-                somaPositiva= 0;
-                somaNegativa= 0;
+         
 // função de validação de input
 
-                if ((positvas>5) && (positivas=0)) {
+        function Notas(){
 
-                    return false;
+            var positivas= 0;
+            var negativas= 0;
+            var somaPositiva= 0;
+            var somaNegativa= 0;
+            var  soma_total= n1+n2+n3+n4+n5+n6+n7;
+
+        var n1= document.getElementById("j1").value;
+            n2= document.getElementById("j2").value;
+            n3= document.getElementById("j3").value;
+            n4= document.getElementById("j4").value;
+            n5= document.getElementById("j5").value;
+            n6= document.getElementById("j6").value;
+            n7= document.getElementById("j7").value;
+
+
+// separando positivos de negativos
+                // if ((positivas>5) && (positivas=0)) {
+
+                //     return false;
                    
-                }else{
-                return true 
-                }
+                // }else{
 
-                if ((negativas=0) &&(negativas<-5)) {
+                // return true 
+                // }
 
-                    return false;    
-                }
-                else{
+                // if ((negativas=0) &&(negativas>-5)) {
+
+                //     return true;    
+                // }
+                // else{
                     
-                    return true;
-                }
+                //     return false;
+                // }
 
 
             if (n1> 0) {
@@ -76,7 +84,7 @@
             if(n1<0){
 
                 negativas+= "Nota N1"+ n1 + "\n";
-                somaNegativa + n1;
+                somaNegativa += n1;
             }
 
             if (n2>0){
@@ -108,38 +116,44 @@
                 somaPositiva += n4;
         
             }
-            if(n5>0)
+            if(n4<0){
 
+                negativas += "Nota N5" + n5 + "\n";
+                somaNegativa += n5; 
+
+            }
+            if(n5>0){
                 positivas += "Nota N5" + n5 + "\n";
-                somaPositiva += n5; 
-
+                somaPositiva += n5  
             }
             if(n5<0){
-                negativas += "Nota N5" + n5 + "\n";
-                somaNegativa += n5  
-            }
-            if(n6>0){
 
-                positivas += "Nota N6" + n6 + "\n";
-                somaPositiva += n6;
-            }
-            if(n6<0){
                 negativas += "Nota N6" + n6 + "\n";
                 somaNegativa += n6;
             }
-            if(n7>0)
-                positivas += "Nota N7" + n7 +"\n";
-                somaPositiva += n7;
+            if(n6>0){
+                positivas += "Nota N6" + n6 + "\n";
+                somaPositiva += n6;
+            }
+            if(n6<0)
+                negativas += "Nota N7" + n7 +"\n";
+                somaNegativa += n7;
             
-            if(n7<0){
-                negativas += "Nota N7"+ n7 +"\n";
+            if(n7>0){
+                positivas += "Nota N7"+ n7 +"\n";
+                somaPositiva += n7
             }
 
-            
-            
-    
-    
+            if(n7<0){
+                negativas += "Nota N7"+ n7 +"\n";
+                somaNegativa += n7
+            }
+
+//chamando para impressão
+            document.getElementById("pos").innerHTML= positivas + " " +somaPositiva
+            document.getElementById("neg").innerHTML= negativas + " " + somaNegativa
+}
     </script>
     
 </body>
-</html>0
+</html>

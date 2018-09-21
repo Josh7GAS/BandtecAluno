@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <label for="">Valor de A</label>
+    <input id="a" type="number">
+    <label for="">Valor de B</label>
+    <input id="b" type="number">
+
+    <button onclick="Clique()">Jogar</button>
+    <p id="e"></p>
+
+    <script>
+        function Clique(){
+    var a =parseInt(document.getElementById("a").value);
+    var b= parseInt(document.getElementById("b").value);
+        msg="Erro";
+        
+        if (a>b) {
+            msg="o valor de 'a' é maior que 'b'";
+            
+         }
+         else{
+             if (a == b){
+                 msg = "O valor de 'a' é igual ao valor de 'b' ";
+             }
+             else{
+                 msg="O valor de a é menor que o valor de b";
+             }}
+    
+         document.getElementById("e").innerHTML= msg;
+        }
+        </script>
+</body>
+</html>

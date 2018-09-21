@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hora</title>
+</head>
+<body>
+    <h1>Hora:</h1>
+    <input id="oi" type="number">
+    <button onclick="doit()">OK</button><br><br>
+
+    R: <p id="h"></p>
+
+    <script>
+    function doit(){
+        var time = document.getElementById("oi").value;
+        msg = "erro";
+        
+        if (time<12) {
+
+            msg = "Bom dia";
+            }
+            
+        else{
+            if(time<18){ 
+
+            msg="Boa tarde";
+            }
+        else{
+             (time<24) 
+
+            msg="Boa Noite";
+            }}
+
+            document.getElementById("h").innerHTML=msg;
+
+    }
+    </script>
+
+</body>
+</html>
