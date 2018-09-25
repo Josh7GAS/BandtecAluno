@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tente sua sorte</title>
+</head>
+
+<body>
+    <h1>Tente sua Sorte</h1>
+    <button onclick="go()">VAI!</button>
+    <p id="tente"></p>
+
+
+    <script>
+        function go() {
+            
+            var escolha = parseInt(Math.random() * 100 + 1);
+            var diga = "erro!";
+
+            switch (escolha) {
+
+                case 7:
+                    diga = "Boa Vida";
+                    break;
+
+                case 33:
+                    diga = "Vc esta amando";
+                    break;
+
+                case 9:
+                    diga = "Não sabe fazer arroz";
+                    break;
+
+                case 51:
+                    diga = "Traido";
+                    break;
+
+                case 42:
+                    diga = "Não estou na fossa";
+                    break;
+
+                default:
+                    diga= "Tente denovo!";
+                    break;
+            }
+            document.getElementById("tente").innerHTML = diga;
+        }
+    </script>
+
+
+</body>
+
+</html>
