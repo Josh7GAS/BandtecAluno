@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Conta Letra</title>
+</head>
+
+<body>
+    <Label>Digite:</Label>
+    <input id="pega" type="text">
+
+    <button onclick="faz()">OK</button><br><br>
+
+    <label for="">A:</label>
+    <p id="a"></p>
+    <label for="">B:</label>
+    <p id="b"></p>
+
+    <label for="">C:</label>
+    <p id="c"></p>
+
+    <p id="erro"></p>
+
+    <script>
+        var qa = 0;
+        var qb = 0;
+        var qc = 0;
+        function faz() {
+            var msg = "";
+            var saida = "";
+            var algo = document.getElementById("pega").value
+
+            switch (algo) {
+                case "a":
+                    qa++;
+                    break;
+
+                case "b":
+                    qb++;
+                    break;
+
+                case "c":
+                    qc++;
+                    break
+
+                default:
+                    msg = "mensagem não computada";
+                    break;
+            }
+
+            document.getElementById("erro").innerHTML = msg
+            document.getElementById("a").innerHTML = qa;
+            document.getElementById("b").innerHTML = qb;
+            document.getElementById("c").innerHTML = qc;
+        }</script>
+</body>
+
+</html>
