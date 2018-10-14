@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>função</title>
+</head>
+
+<body>
+    <input id="a1" type="number" name="" id="">
+    <button onclick="dobro()">Dobro</button>
+    <button onclick="metade()">Metade</button>
+    <button onclick="triplo()">Triplo</button>
+    <button onclick="metadedodobro()">Metade do Dobro</button>
+
+    <p id="resultado"></p>
+
+
+    <script>
+
+        function exiberesultado(msg) {
+
+            document.getElementById("resultado").innerHTML = msg;
+        }
+        function getNumero(){
+            return parseInt(document.getElementById("a1").value);
+        }
+
+        function dobro() {
+            exiberesultado (getNumero() * 2);
+        }
+
+        function metade() {
+            exiberesultado (getNumero() / 2);
+        }
+
+        function triplo() {
+            exiberesultado (getNumero() * 3);
+        }
+
+        function metadedodobro() {
+            valor = getNumero(); 
+            exiberesultado ((getNumero()*2)/2);
+        }
+
+
+    </script>
+
+</body>
+
+</html>

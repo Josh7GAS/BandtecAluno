@@ -1,0 +1,13 @@
+Dominio de um atributo.
+No Master Data Services, um atributo baseado em domínio é um atributo com valores que são preenchidos por membros de outra entidade. Você pode pensar em um atributo baseado em domínio como uma lista restrita; atributos baseados em domínio impedem os usuários de inserir valores de atributo que não são válidos. Para selecionar um valor de atributo, o usuário deve escolher as opções de uma lista.
+
+ 
+Entidade primaria ou forte.
+É possível que um conjunto de entidades não tenha atributos suficientes para formar uma chave primária. Tal conjunto de entidades é nomeado como conjunto de entidades fraco. Um conjunto de entidades que possui uma chave primária é definido como conjunto de entidades forte. Para ilustrar, considere o conjunto de entidades transação que possui três atributos: número-transação, data e quantia. Embora cada entidade transação seja distinta, transações em contas diferentes podem compartilhar o mesmo número de transação. Assim, este conjunto de entidades não tem uma chave primária e é, portanto, um conjunto de entidades fraco. Para que este conjunto de entidades fraco tenha significado, ele deve fazer parte de um conjunto de relacionamentos um-para-muitos. Este conjunto de relacionamentos não deve ter atributos descritivos, uma vez que qualquer atributo requerido pode estar associado ao conjunto de entidade fraco.
+
+relacionamento identificador ou tipo dependência.
+É a relação dos dados o hexagramazinho.
+
+Relacionamento recursivo.
+Ocorre quando uma mesma Entidade participa mais de
+uma vez em um Relacionamento com diferentes papéis 

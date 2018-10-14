@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Equação do primeiro grau</title>
+</head>
+
+<body>
+    A <input id="a" type="number">
+    B <input type="number" id="b"><br><br>
+    <button onclick="calcula()">Calcular X</button>
+
+    <p id="resultado"></p>
+
+    <script>
+
+
+        function mostra(msg) {
+
+            document.getElementById("resultado").innerHTML = msg;
+        }
+
+        function calcula() {
+            var X = 0;
+            var A = parseInt(document.getElementById("a").value);
+            var B = parseInt(document.getElementById("b").value);
+            if (A != 0)
+                mostra(X = -B / A)
+
+            else { "ERRO!" }
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
