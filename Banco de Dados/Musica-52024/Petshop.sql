@@ -52,9 +52,29 @@ select*from Pet;
 update Pet set Data_de_nascimento = '2002-05-25'
 				where codigo_A in (101);
 
-                       
+update Pet set Data_de_nascimento = '2012-12-12'
+				where codigo_A in (102);
+
+update Pet set Data_de_nascimento = '2011-03-04'
+				where codigo_A in (103);
+
+update Pet set Data_de_nascimento = '1999-10-25'
+				where codigo_A in(104);
+                
+update Pet set Data_de_nascimento = '2004-02-02'
+				where codigo_A in(107);
 
                        
-                       
-                       
+select*from Pet;
+
+select*from Pet where Tipo Like 'cachorro';
+select Nome, Data_de_nascimento from Pet;
+select*from Pet Order by Nome;
+select*from Pet Order by Bairro desc;
+
+alter table Pet    add sexo char(1),
+				   add check(sexo in ('m','f'));
+                   
+                   
+                   
  

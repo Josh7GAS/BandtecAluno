@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Fortune Teller</title>
+</head>
+
+<body>
+    Numero de Filhos <input id="n" type="number"><br><br>
+    Nome do Parceiro(a) <input id="z" type="text"><br><br>
+    Local onde mora <input id="y" type="text"><br><br>
+    Trabalho <input id="x" type="text"><br><br>
+
+    <button onclick="tellfortuneteller()">Veja Seu Futuro em um clique!!!</button>
+
+    <p id="oi"></p>
+
+    <script>
+        function filhos() {
+             return document.getElementById("n").value;
+        }
+        function Parceiro() {
+             return document.getElementById("z").value;
+        }
+        function Local() {
+           return document.getElementById("y").value;
+        }
+        function Trabalho() {
+             return document.getElementById("x").value;
+        }
+
+        function tellfortuneteller() {
+            var n = filhos();
+            var z = Parceiro();
+            var y = Local();
+            var x = Trabalho();
+            var futuro = "Você será um " + x + " na " + y + " e casado com " + z + ", Terá " + n + " Crianças";
+            document.getElementById("oi").innerHTML = futuro;
+
+        }
+    </script>
+
+</body>
+
+</html>

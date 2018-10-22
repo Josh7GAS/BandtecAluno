@@ -27,4 +27,6 @@ insert into Engenheiro values
 (null, "80000,00", "Sim", "Feminino");
 select *from Engenheiro;
 
+
+
 alter table Engenheiro add cod_dep int, add foreign key (cod_dep) references Dependente (cod_dep);

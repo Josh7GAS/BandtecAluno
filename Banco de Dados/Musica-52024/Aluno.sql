@@ -70,6 +70,18 @@ update aluno set codCurso= 101 where ra in (52001);
 update aluno set codCurso= 102 where ra in (52056, 52057);
 update aluno set codCurso= 100 where ra in (52000);
 
+update aluno set codcurso=101 where ra in (52001);
+
 select*from Aluno, curso
 	where codCurso = codigo;
-    
+
+select * from Aluno;     
+
+update aluno set codCurso= 102 where ra in (52057);
+
+
+
+
+
+
+

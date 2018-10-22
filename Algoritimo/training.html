@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>square</title>
+</head>
+
+<body>
+    <input type="number" id="a1">
+    <button onclick="square()"></button>
+    <p id="oi"></p>
+
+    <script>
+        function square(number) {
+            return number * number;
+        }
+        document.getElementById("oi").innerHTML = square()
+    </script>
+</body>
+
+</html>
